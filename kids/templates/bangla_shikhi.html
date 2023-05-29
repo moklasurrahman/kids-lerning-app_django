@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="heding">
+                    <h1>Bangla lesson</h1>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <div class="container">
+    
+        <div class="row">
+            <div class="col-lg-3 col-md-3 ">
+                <a href="{% url 'sorborno' %}">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/স্বরবর্ণ.png' %}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">স্বরবর্ণ শিখি</h4>
+    
+                        </div>
+                    </div>
+                </a>
+            </div>
+    
+    
+            <div class="col-lg-3 col-md-3">
+                <a href="{% url 'banjonborno' %}">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/ব্যাঞ্জন বর্ণ.png' %}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">ব্যাঞ্জন বর্ণ শিখি</h4>
+    
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+{% endblock content %}

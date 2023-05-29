@@ -1,0 +1,196 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- {% block content %} -->
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English poem</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+
+        .jumbotron {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+            background: linear-gradient(to top, #76b852, #8DC26F);
+
+        }
+
+        .albam {
+            background: linear-gradient(to top, #76b852, #8DC26F);
+
+        }
+
+        @media (min-width: 768px) {
+            .jumbotron {
+                padding-top: 6rem;
+                padding-bottom: 6rem;
+            }
+        }
+
+        .jumbotron p:last-child {
+            margin-bottom: 0;
+        }
+
+        .jumbotron-heading {
+            font-weight: 300;
+        }
+
+        .jumbotron .container {
+            max-width: 40rem;
+        }
+
+        footer {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        .card-text {
+            color: #76b852;
+        }
+
+        .cardsiz {
+            width: 100%;
+            height: 450px;
+        }
+
+        footer p {
+            margin-bottom: .25rem;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="heding">
+                        <h1>English Poem</h1>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <iframe width="" height="315" src="https://www.youtube.com/embed/1dttq5p0xUM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <iframe width="" height="315" src="https://www.youtube.com/embed/RLMJmJ_IdnQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <iframe width="" height="315" src="https://www.youtube.com/embed/QpdzS9yGfjY?start=14"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+
+                    <div class="jumbotron text-center">
+                        <div class="container">
+                            <h1 class="jumbotron-heading">Search More On YouTube</h1>
+
+                            <form method="POST">
+                                <div class="input-group mb-3">
+                                    {% csrf_token %}
+                                    <input type="text" name="search" class="form-control" aria-label="Username"
+                                        placeholder="Search English Poem ">
+                                </div>
+                                <p>
+                                    <button type="submit" name="submit" value="search"
+                                        class="btn btn-primary my-2">Search</button>
+                                    <button type="submit" name="submit" value="lucky"
+                                        class="btn btn-secondary my-2">Feeling Lucky</button>
+
+                                </p>
+                            </form>
+
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------- -->
+
+                    <div class="py-5 albam">
+                        <div class="container">
+                            <div class="row">
+                                {% for video in videos %}
+                                <div class="col-md-4">
+                                    <div class="card mb-4 shadow-sm cardsiz">
+                                        <img class="bd-placeholder-img card-img-top" width="100%" height="225"
+                                            src="{{ video.thumbnail }}" preserveAspectRatio="xMidYMid slice"
+                                            focusable="false" role="img" aria-label="Placeholder: Thumbnail"></img>
+                                        <div class="card-body">
+                                            <p class="card-text">{{ video.title }}</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="btn-group">
+                                                    <a type="button" href="{{ video.url }}"
+                                                        class="btn btn-sm btn-outline-secondary">View</a>
+                                                </div>
+                                                <small class="text-muted">{{video.duration}} mins</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------------------- -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+<!-- {% endblock content %} -->

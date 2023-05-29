@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #3b910c;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
+    background: -moz-linear-gradient(to top, #76b852, #8DC26F);
+    background: -o-linear-gradient(to top, #76b852, #8DC26F);
+    background: linear-gradient(to top, #76b852, #8DC26F);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    border-radius: 100%;
+    transition: 1s;
+    
+}
+.logo:hover{
+    transform: rotate(180deg);
+}
+
+.nav-link{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+}
+.nav-link:hover{
+   color: yellow !important;
+   font-size: 30px;
+}
+.btn-style{
+    border: 0px;
+    background: tomato;
+    padding: 4px 10px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    transition: 1s;
+}
+.btn-style:hover{
+    color: black;
+}
+.navbg-color{
+    background:#3099af !important;
+    box-shadow: 3px 5px 10px rgb(109, 105, 105) !important;
+    padding: 0px !important;
+}
+.nav-link{
+    color: white !important;
+}
+
+.img{
+    background-image: url("img/img1.jpg");
+    width: 500px;
+    
+}
+
+.btnbg-style{
+   background-color: tomato;
+   width: 35px;
+   height: 35px;
+}
+
+.sign_in{
+    background-color: yellow;
+    color: black;
+}
+.sign_in:hover{
+    color: red;
+}
+
+
+
+.paras p{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color:tomato;
+    text-transform: capitalize;
+    margin-top: 20px;
+    text-indent: initial;
+    font-style: italic;
+    font-family: 'Edu SA Beginner', cursive !important;
+    text-shadow: 2px 3px 5px rgb(121, 118, 118);
+
+
+}
+
+
+
+

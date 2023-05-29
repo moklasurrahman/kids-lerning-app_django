@@ -1,0 +1,67 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'contact/contact_style.css' %}">
+
+    <title>contact</title>
+</head>
+
+<body>
+
+    <div><span>{% include "navbar.html" %}</span></div>
+
+
+    <div class="container">
+        <header>
+            <h1>Contact us & request a course</h1>
+        </header>
+
+        <div id="form">
+
+            <div class="fish" id="fish"></div>
+            <div class="fish" id="fish2"></div>
+
+            <form id="waterform" method="post">
+                {% csrf_token %}
+
+                <div class="formgroup" id="name-form">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="formgroup" id="email-form">
+                    <label for="email">Your e-mail</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="formgroup" id="email-form">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"/>
+                </div>
+
+                <div class="formgroup" id="message-form">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <input type="submit" value="Send your message!" />
+            </form>
+        </div>
+
+
+
+    </div>
+    <script src="{% static 'contact/contact.js' %}"></script>
+
+</body>
+
+</html>

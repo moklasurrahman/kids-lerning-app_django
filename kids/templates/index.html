@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  
+  <title>home</title>
+</head>
+<body>
+  <style>
+
+.card-img{
+  
+  height: 300px;
+}
+.card-title{
+  background: linear-gradient(to top, #76b852, #8DC26F);
+  padding: 3px;
+
+}
+
+.card-footer i{
+  color: yellow;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.card-footer i:hover{
+  color: rgb(255, 0, 0);
+  padding: 3px;
+  cursor: pointer;
+}
+
+.card-title{
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+
+  </style>
+  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="heding">
+            <h1>All courses</h1>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container">
+  
+      <div class="row">
+        <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'bangla' %}">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/বাংলা শিখি.png' %}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">বাংলা শিখি</h4>
+  
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'englishAlphabet' %}">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/English.png' %}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">English</h4>
+  
+              </div>
+            </div>
+          </a>
+        </div>
+  
+  
+        <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'অংক-শিখি' %}">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/অংক শিখি.png' %}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">অংক শিখি</h4>
+  
+              </div>
+            </div>
+          </a>
+        </div>
+  
+  
+        <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'kobita' %}">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/কবিতা.png' %}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">কবিতা শিখি</h4>
+  
+              </div>
+            </div>
+          </a>
+        </div>
+
+
+        <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'paint' %}">
+            <div class="card">
+              <img class="card-img-top" src="{% static 'img/akaki.png' %}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">আঁকা আঁকি </h4>
+  
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  
+  <br><br>
+  
+  <!-- ---------------------------------------REQUESTED COURSES -->
+  <section>
+    <div class="container">
+      <div class="row">
+          <h3>REQUESTED COURSES</h3> <hr>
+
+
+         
+         {% for request_courche in request_courches %}
+         <div class="col-lg-3 col-md-4 ">
+          <a href="{% url 'courch-details' request_courche.id %}">
+            <div class="card">
+              <img class="card-img-top card-img" src="{{request_courche.image.url}}" alt="Card image">
+              <div class="card-img-overlay">
+                <h4 class="card-title">{{request_courche.subject_title}}
+                </h4>
+
+                <!-- <div class="card-footer mt-auto "><a href="{% url 'deletecourch' request_courche.id %}">
+                  <i class="fa fa-trash fa-2x"></i></a>
+                </div> -->
+  
+              </div>
+
+            </div>
+          </a>
+        </div>
+         {% endfor %}
+          
+
+
+        
+        
+        
+      </div>
+    </div>
+  </section>
+
+
+  
+</body>
+</html>
+
+
+
+{% endblock content %}

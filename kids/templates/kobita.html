@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<section>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="heding">
+                    <h1>ছোটদের ছড়া ও কবিতা</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3 col-md-3 ">
+                <a href="{% url 'banglakobita' %}">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/kobita.png' %}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">বাংলা</h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-lg-3 col-md-3">
+                <a href="{% url 'englishPoem' %}">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'img/kobita.png' %}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">English</h4>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+
+{% endblock content %}

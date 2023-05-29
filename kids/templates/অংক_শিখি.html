@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}   
+<section>
+  <br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="heding">
+        <h1>অংক শিখি</h1>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-3 col-md-3 ">
+      <a href="{% url 'বাংলা_সংখ্যা' %}">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'math-card-img/card.png' %}" alt="Card image">
+          <div class="card-img-overlay">
+            <h4 class="card-title">বাংলা সংখ্যা</h4>
+            
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-lg-3 col-md-3">
+     <a href="{% url 'নামতা' %}">
+      <div class="card">
+        <img class="card-img-top" src="{% static 'math-card-img/card2.png' %}" alt="Card image">
+        <div class="card-img-overlay">
+          <h4 class="card-title">নামতা</h4>
+          
+        </div>
+      </div>
+     </a>
+    </div>
+    <div class="col-lg-3 col-md-3">
+      <a href="{% url 'englishNumbers' %}">
+       <div class="card">
+         <img class="card-img-top" src="{% static 'math-card-img/card 3.png' %}" alt="Card image">
+         <div class="card-img-overlay">
+           <h4 class="card-title">English Number</h4>
+           
+         </div>
+       </div>
+      </a>
+     </div>
+  </div>
+</div>
+
+
+</section>
+{% endblock content %}

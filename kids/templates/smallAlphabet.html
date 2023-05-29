@@ -1,0 +1,190 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .btnt {
+
+      width: 60px;
+      height: 60px;
+      font-weight: 900;
+      font-size: 35px;
+      color: green;
+      border: 1px solid black;
+
+
+      text-align: center;
+      align-items: center;
+
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+      box-sizing: border-box;
+      cursor: pointer;
+
+
+
+
+      justify-content: center;
+      line-height: normal;
+      max-width: 100%;
+      overflow: visible;
+      text-align: center;
+      text-transform: none;
+      transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+
+    }
+
+    .btnt:hover {
+      color: black;
+    }
+    .content{
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .content img {
+      border: 10px solid red;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+    }
+    .video{
+        margin-top: 15px;
+    }
+    .video iframe{
+      width: 530px;
+      height: 260px;
+      border: 10px solid red;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    }
+  
+    #second,
+    #third,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight,
+    #nine,
+    #ten,
+    #t11,
+    #t12,
+    #t13,
+    #t14,
+    #t15,
+    #t16,
+    #t17,
+    #t18,
+    #t19,
+    #t20,
+    #t21,
+    #t22,
+    #t23,
+    #t24,
+    #t25,
+    #t26 {
+      display: none;
+    }
+
+    .banjonborno-btn button {
+      outline: none;
+      margin: 15px 10px;
+      text-align: center;
+      align-items: center;
+      text-transform: lowercase;
+    }
+  </style>
+
+    <section>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="heding">
+                <h1>Small alphabet letters</h1>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="content">
+                <div id="first"><img src="{% static 'capital_img/1.PNG' %}" class="img-fluid" /> </div>
+                <div id="second"><img src="{% static 'capital_img/2.PNG' %}" class="img-fluid" /> </div>
+                <div id="third"><img src="{% static 'capital_img/3.PNG' %}" class="img-fluid" /> </div>
+                <div id="four"><img src="{% static 'capital_img/4.PNG' %}" class="img-fluid" /> </div>
+      
+                <div id="five"><img src="{% static 'capital_img/5.PNG' %}" class="img-fluid" /> </div>
+                <div id="six"><img src="{% static 'capital_img/6.PNG' %}" class="img-fluid" /> </div>
+                <div id="seven"><img src="{% static 'capital_img/7.PNG' %}" class="img-fluid" /> </div>
+                <div id="eight"><img src="{% static 'capital_img/8.PNG' %}" class="img-fluid" /> </div>
+                <div id="nine"><img src="{% static 'capital_img/9.PNG' %}" class="img-fluid" /> </div>
+                <div id="ten"><img src="{% static 'capital_img/10.PNG' %}" class="img-fluid" /> </div>
+                <div id="t11"><img src="{% static 'capital_img/11.PNG' %}" class="img-fluid" /> </div>
+                <div id="t12"><img src="{% static 'capital_img/12.PNG' %}" class="img-fluid" /> </div>
+                <div id="t13"><img src="{% static 'capital_img/13.PNG' %}" class="img-fluid" /> </div>
+                <div id="t14"><img src="{% static 'capital_img/14.PNG' %}" class="img-fluid" /> </div>
+                <div id="t15"><img src="{% static 'capital_img/15.PNG' %}" class="img-fluid" /> </div>
+                <div id="t16"><img src="{% static 'capital_img/16.PNG' %}" class="img-fluid" /> </div>
+                <div id="t17"><img src="{% static 'capital_img/17.PNG' %}" class="img-fluid" /> </div>
+                <div id="t18"><img src="{% static 'capital_img/18.PNG' %}" class="img-fluid" /> </div>
+                <div id="t19"><img src="{% static 'capital_img/19.PNG' %}" class="img-fluid" /> </div>
+                <div id="t20"><img src="{% static 'capital_img/20.PNG' %}" class="img-fluid" /> </div>
+                <div id="t21"><img src="{% static 'capital_img/21.PNG' %}" class="img-fluid" /> </div>
+                <div id="t22"><img src="{% static 'capital_img/22.PNG' %}" class="img-fluid" /> </div>
+                <div id="t23"><img src="{% static 'capital_img/23.PNG' %}" class="img-fluid" /> </div>
+                <div id="t24"><img src="{% static 'capital_img/24.PNG' %}" class="img-fluid" /> </div>
+                <div id="t25"><img src="{% static 'capital_img/25.PNG' %}" class="img-fluid" /> </div>
+                <div id="t26"><img src="{% static 'capital_img/26.PNG' %}" class="img-fluid" /> </div>
+      
+              </div>
+            </div>
+      
+            <div class="col-lg-6">
+              <div class="video">
+                <iframe src="https://www.youtube.com/embed/Moa5JIeBAiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+            </div>
+      
+      
+      
+            <div class="banjonborno-btn">
+      
+              <button onmousedown="bleep.play()" class="btnt" onClick="myFunction()">A</button>
+              <button onmousedown="bleep2.play()" class="btnt" onClick="myFunction2()">B</button>
+      
+              <button onmousedown="bleep3.play()" class="btnt" onClick="myFunction3()">C</button>
+      
+              <button onmousedown="bleep4.play()" class="btnt" onClick="myFunction4()">D</button>
+              <button onmousedown="bleep5.play()" class="btnt" onClick="myFunction5()">E</button>
+              <button onmousedown="bleep6.play()" class="btnt" onClick="myFunction6()">F</button>
+              <button onmousedown="bleep7.play()" class="btnt" onClick="myFunction7()">G</button>
+              <button onmousedown="bleep8.play()" class="btnt" onClick="myFunction8()">H</button>
+              <button onmousedown="bleep9.play()" class="btnt" onClick="myFunction9()">I</button>
+              <button onmousedown="bleep10.play()" class="btnt" onClick="myFunction10()">J</button>
+              <button onmousedown="bleep11.play()" class="btnt" onClick="myFunction11()">K</button>
+              <button onmousedown="bleep12.play()" class="btnt" onClick="myFunction12()">L</button>
+      
+              <button onmousedown="bleep13.play()" class="btnt" onClick="myFunction13()">M</button>
+              <button onmousedown="bleep14.play()" class="btnt" onClick="myFunction14()">N</button>
+      
+              <button onmousedown="bleep15.play()" class="btnt" onClick="myFunction15()">O</button>
+              <button onmousedown="bleep16.play()" class="btnt" onClick="myFunction16()">P</button>
+              <button onmousedown="bleep17.play()" class="btnt" onClick="myFunction17()">Q</button>
+              <button onmousedown="bleep18.play()" class="btnt" onClick="myFunction18()">R</button>
+              <button onmousedown="bleep19.play()" class="btnt" onClick="myFunction19()">S</button>
+              <button onmousedown="bleep20.play()" class="btnt" onClick="myFunction20()">T</button>
+              <button onmousedown="bleep21.play()" class="btnt" onClick="myFunction21()">U</button>
+              <button onmousedown="bleep22.play()" class="btnt" onClick="myFunction22()">V</button>
+              <button onmousedown="bleep23.play()" class="btnt" onClick="myFunction23()">w</button>
+              <button onmousedown="bleep24.play()" class="btnt" onClick="myFunction24()">X</button>
+              <button onmousedown="bleep25.play()" class="btnt" onClick="myFunction25()">Y</button>
+              <button onmousedown="bleep26.play()" class="btnt" onClick="myFunction26()">Z</button>
+            </div>
+      
+          </div>
+      
+        </div>
+      
+    </section>
+  {% endblock content %}
+    

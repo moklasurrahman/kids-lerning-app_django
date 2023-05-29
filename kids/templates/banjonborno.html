@@ -1,0 +1,225 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<style>
+    .btnt {
+
+      width: 65px;
+      height: 65px;
+      font-weight: 900;
+      font-size: 35px;
+      color: #ed1b24;
+      border: 1px solid black;
+      text-align: center;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      justify-content: center;
+      line-height: normal;
+      max-width: 100%;
+      overflow: visible;
+      text-align: center;
+      text-transform: none;
+
+    }
+
+    .btnt:hover {
+      color: black;
+    }
+
+    .img-allitem img {
+      border: 10px solid red;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+    }
+
+    .video {
+      width: 530px;
+      height: 260px;
+      border: 10px solid red;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    }
+
+    #second,
+    #third,
+    #four,
+    #five,
+    #six,
+    #seven,
+    #eight,
+    #nine,
+    #ten,
+    #t11,
+    #t12,
+    #t13,
+    #t14,
+    #t15,
+    #t16,
+    #t17,
+    #t18,
+    #t19,
+    #t20,
+    #t21,
+    #t22,
+    #t23,
+    #t24,
+    #t25,
+    #t26,
+    #t27,
+    #t28,
+    #t29,
+    #t30,
+    #t31,
+    #t32,
+    #t33,
+    #t34,
+    #t35,
+    #t36,
+    #t37,
+    #t38,
+    #t39 {
+      display: none;
+    }
+
+    .banjonborno-btn {
+      align-items: center;
+      padding: 0px;
+    }
+
+    .banjonborno-btn button {
+      outline: none;
+      margin: 15px 8px 10px;
+      text-align: center;
+      align-items: center;
+    }
+  </style>
+
+  <section>
+    <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="heding">
+          <h1>ব্যাঞ্জন বর্ণ</h1>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div class="img-allitem">
+        <div id="first"><img src="{% static 'banjonborno_img/1.PNG' %}" class="img-fluid" /> </div>
+        <div id="second"><img src="{% static 'banjonborno_img/2.PNG' %}" class="img-fluid" /> </div>
+        <div id="third"><img src="{% static 'banjonborno_img/3.PNG' %}" class="img-fluid" /> </div>
+        <div id="four"><img src="{% static 'banjonborno_img/4.PNG' %}" class="img-fluid" /> </div>
+        <div id="five"><img src="{% static 'banjonborno_img/5.PNG' %}" class="img-fluid" /> </div>
+        <div id="six"><img src="{% static 'banjonborno_img/6.PNG' %}" class="img-fluid" /> </div>
+        <div id="seven"><img src="{% static 'banjonborno_img/7.PNG' %}" class="img-fluid" /> </div>
+        <div id="eight"><img src="{% static 'banjonborno_img/8.PNG' %}" class="img-fluid" /> </div>
+        <div id="nine"><img src="{% static 'banjonborno_img/9.PNG' %}" class="img-fluid" /> </div>
+        <div id="ten"><img src="{% static 'banjonborno_img/10.PNG' %}" class="img-fluid" /> </div>
+        <div id="t11"><img src="{% static 'banjonborno_img/11.PNG' %}" class="img-fluid" /> </div>
+        <div id="t12"><img src="{% static 'banjonborno_img/12.PNG' %}" class="img-fluid" /> </div>
+        <div id="t13"><img src="{% static 'banjonborno_img/13.PNG' %}" class="img-fluid" /> </div>
+        <div id="t14"><img src="{% static 'banjonborno_img/14.PNG' %}" class="img-fluid" /> </div>
+        <div id="t15"><img src="{% static 'banjonborno_img/15.PNG' %}" class="img-fluid" /> </div>
+        <div id="t16"><img src="{% static 'banjonborno_img/16.PNG' %}" class="img-fluid" /> </div>
+        <div id="t17"><img src="{% static 'banjonborno_img/17.PNG' %}" class="img-fluid" /> </div>
+        <div id="t18"><img src="{% static 'banjonborno_img/18.PNG' %}" class="img-fluid" /> </div>
+        <div id="t19"><img src="{% static 'banjonborno_img/19.PNG' %}" class="img-fluid" /> </div>
+        <div id="t20"><img src="{% static 'banjonborno_img/20.PNG' %}" class="img-fluid" /> </div>
+        <div id="t21"><img src="{% static 'banjonborno_img/21.PNG' %}" class="img-fluid" /> </div>
+        <div id="t22"><img src="{% static 'banjonborno_img/22.PNG' %}" class="img-fluid" /> </div>
+        <div id="t23"><img src="{% static 'banjonborno_img/23.PNG' %}" class="img-fluid" /> </div>
+        <div id="t24"><img src="{% static 'banjonborno_img/24.PNG' %}" class="img-fluid" /> </div>
+        <div id="t25"><img src="{% static 'banjonborno_img/25.PNG' %}" class="img-fluid" /> </div>
+        <div id="t26"><img src="{% static 'banjonborno_img/26.PNG' %}" class="img-fluid" /> </div>
+        <div id="t27"><img src="{% static 'banjonborno_img/27.PNG' %}" class="img-fluid" /> </div>
+        <div id="t28"><img src="{% static 'banjonborno_img/28.PNG' %}" class="img-fluid" /> </div>
+        <div id="t29"><img src="{% static 'banjonborno_img/29.PNG' %}" class="img-fluid" /> </div>
+        <div id="t30"><img src="{% static 'banjonborno_img/30.PNG' %}" class="img-fluid" /> </div>
+        <div id="t31"><img src="{% static 'banjonborno_img/31.PNG' %}" class="img-fluid" /> </div>
+        <div id="t32"><img src="{% static 'banjonborno_img/32.PNG' %}" class="img-fluid" /> </div>
+        <div id="t33"><img src="{% static 'banjonborno_img/33.PNG' %}" class="img-fluid" /> </div>
+        <div id="t34"><img src="{% static 'banjonborno_img/34.PNG' %}" class="img-fluid" /> </div>
+        <div id="t35"><img src="{% static 'banjonborno_img/35.PNG' %}" class="img-fluid" /> </div>
+        <div id="t36"><img src="{% static 'banjonborno_img/36.PNG' %}" class="img-fluid" /> </div>
+        <div id="t37"><img src="{% static 'banjonborno_img/37.PNG' %}" class="img-fluid" /> </div>
+        <div id="t38"><img src="{% static 'banjonborno_img/38.PNG' %}" class="img-fluid" /> </div>
+        <div id="t39"><img src="{% static 'banjonborno_img/39.PNG' %}" class="img-fluid" /> </div>
+      </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-end">
+        <iframe class="video" src="https://www.youtube.com/embed/IJfWQ9jtg1k?start=39" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="banjonborno-btn">
+        <button class="btnt" onClick="myFunction()">ক</button>
+        <button class="btnt" onClick="myFunction2()">খ</button>
+        <button class="btnt" onClick="myFunction3()">গ</button>
+        <button class="btnt" onClick="myFunction4()">ঘ</button>
+        <button class="btnt" onClick="myFunction5()">ঙ</button>
+        <button class="btnt" onClick="myFunction6()">চ</button>
+        <button class="btnt" onClick="myFunction7()">ছ</button>
+        <button class="btnt" onClick="myFunction8()">জ</button>
+        <button class="btnt" onClick="myFunction9()">ঝ</button>
+        <button class="btnt" onClick="myFunction10()">ঞ</button>
+        <button class="btnt" onClick="myFunction11()">ট</button>
+        <button class="btnt" onClick="myFunction12()">ঠ</button>
+
+        <button class="btnt" onClick="myFunction13()">ড</button>
+        <button class="btnt" onClick="myFunction14()">ঢ</button>
+
+        <button class="btnt" onClick="myFunction15()">ণ </button>
+        <button class="btnt" onClick="myFunction16()">ত</button>
+        <button class="btnt" onClick="myFunction17()">থ</button>
+        <button class="btnt" onClick="myFunction18()">দ</button>
+        <button class="btnt" onClick="myFunction19()">ধ</button>
+        <button class="btnt" onClick="myFunction20()">ন</button>
+        <button class="btnt" onClick="myFunction21()">প</button>
+        <button class="btnt" onClick="myFunction22()">ফ</button>
+        <button class="btnt" onClick="myFunction23()">ব</button>
+        <button class="btnt" onClick="myFunction24()">ভ</button>
+        <button class="btnt" onClick="myFunction25()">ম</button>
+        <button class="btnt" onClick="myFunction26()">য</button>
+        <button class="btnt" onClick="myFunction27()">র</button>
+
+        <button class="btnt" onClick="myFunction28()">ল</button>
+        <button class="btnt" onClick="myFunction29()">শ</button>
+
+        <button class="btnt" onClick="myFunction30()">ষ</button>
+        <button class="btnt" onClick="myFunction31()">স</button>
+        <button class="btnt" onClick="myFunction32()">হ</button>
+        <button class="btnt" onClick="myFunction33()">ড়</button>
+        <button class="btnt" onClick="myFunction34()">ঢ়</button>
+        <button class="btnt" onClick="myFunction35()">য়</button>
+        <button class="btnt" onClick="myFunction36()">ৎ</button>
+        <button class="btnt" onClick="myFunction37()"> ং</button>
+        <button class="btnt" onClick="myFunction38()"> ঃ</button>
+        <button class="btnt" onClick="myFunction39()"> ঁ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+{% endblock content %}
+    

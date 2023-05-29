@@ -1,0 +1,155 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+
+    .btnt{
+      
+      width: 60px;
+      height: 60px;
+      font-weight: 900;
+      font-size: 35px;
+      color: tomato;
+      border: 1px solid black;
+      
+     
+      text-align: center;
+      align-items: center;
+
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      
+      
+
+
+  justify-content: center;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;  
+
+    }
+
+    .btnt:hover{
+      color: black;
+    }
+    
+    
+    .content {   
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    .content img {
+      border: 10px solid red;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+    }
+    
+    #second, #third, #four, #five, #six, #seven, #eight, #nine, #ten, #t11, #t12, #t13,
+    #t14, #t15, #t16, #t17, #t18, #t19, #t20, #t21, #t22, #t23, #t24, #t25, #t26{
+      display: none;
+    }
+    
+    .banjonborno-btn button {
+      outline: none;
+      margin: 15px 10px;
+      text-align: center;
+      align-items: center;
+    }
+    .video{
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .video iframe{
+      border: 1px solid black;
+      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+
+    }
+
+  </style>
+<section>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="heding">
+              <h1>বাংলা সংখ্যা</h1>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container">
+      
+          <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="video">
+                  <iframe width="500" height="200" src="https://www.youtube.com/embed/LC_2fHPazDk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+                </div>
+                <div class="banjonborno-btn">
+                  <button onmousedown="bleep.play()" class="btnt" onClick="myFunction()">১</button>
+                  <button onmousedown="bleep2.play()" class="btnt" onClick="myFunction2()">২</button>
+                  <button onmousedown="bleep3.play()" class="btnt" onClick="myFunction3()">৩</button>
+                  <button onmousedown="bleep4.play()" class="btnt" onClick="myFunction4()">৪</button>
+                  <button onmousedown="bleep5.play()" class="btnt" onClick="myFunction5()">৫</button>
+                  <button onmousedown="bleep6.play()" class="btnt" onClick="myFunction6()">৬</button>
+                  <button onmousedown="bleep7.play()" class="btnt" onClick="myFunction7()">৭</button>
+                  <button onmousedown="bleep8.play()" class="btnt" onClick="myFunction8()">৮</button>
+                  <button onmousedown="bleep9.play()" class="btnt" onClick="myFunction9()">৯</button>
+                  <button onmousedown="bleep10.play()" class="btnt" onClick="myFunction10()">১০</button>
+                  <button onmousedown="bleep11.play()" class="btnt" onClick="myFunction11()">১১</button>
+                  <button onmousedown="bleep12.play()" class="btnt" onClick="myFunction12()">১২</button>
+      
+                  <button onmousedown="bleep13.play()" class="btnt" onClick="myFunction13()">১৩</button>
+                  <button onmousedown="bleep14.play()" class="btnt" onClick="myFunction14()">১৪</button>
+      
+                  <button onmousedown="bleep15.play()" class="btnt" onClick="myFunction15()">১৫</button>
+                  <button onmousedown="bleep16.play()" class="btnt" onClick="myFunction16()">১৬</button>
+                  <button onmousedown="bleep17.play()" class="btnt" onClick="myFunction17()">১৭</button>
+                  <button onmousedown="bleep18.play()" class="btnt" onClick="myFunction18()">১৮</button>
+                  <button onmousedown="bleep19.play()" class="btnt" onClick="myFunction19()">১৯</button>
+                  <button onmousedown="bleep20.play()" class="btnt" onClick="myFunction20()">২০</button>
+                  <button onmousedown="bleep21.play()" class="btnt" onClick="myFunction21()">২১</button>
+                  <button onmousedown="bleep22.play()" class="btnt" onClick="myFunction22()">২২</button>
+                  <button onmousedown="bleep23.play()" class="btnt" onClick="myFunction23()">২৩</button>
+                  <button onmousedown="bleep24.play()" class="btnt" onClick="myFunction24()">২৪</button>
+                  <button onmousedown="bleep25.play()" class="btnt" onClick="myFunction25()">২৫</button>
+                  <button onmousedown="bleep26.play()" class="btnt" onClick="myFunction26()">২৬</button>
+                  <button onmousedown="bleep27.play()" class="btnt" onClick="myFunction27()">২৭</button>
+                  <button onmousedown="bleep28.play()" class="btnt" onClick="myFunction28()">২৮</button>
+                  <button onmousedown="bleep29.play()" class="btnt" onClick="myFunction29()">২৯</button>
+                  <button onmousedown="bleep30.play()" class="btnt" onClick="myFunction30()">৩০</button>
+                  <button onmousedown="bleep31.play()" class="btnt" onClick="myFunction31()">৩১</button>
+                  <button onmousedown="bleep32.play()" class="btnt" onClick="myFunction32()">৩২</button>
+                  <button onmousedown="bleep33.play()" class="btnt" onClick="myFunction33()">৩৩</button>
+                  <button onmousedown="bleep34.play()" class="btnt" onClick="myFunction34()">৩৪</button>
+                  <button onmousedown="bleep35.play()" class="btnt" onClick="myFunction35()">৩৫</button>
+                  <button onmousedown="bleep36.play()" class="btnt" onClick="myFunction36()">৩৬</button>
+                  <button onmousedown="bleep37.play()" class="btnt" onClick="myFunction37()">৩৭</button>
+                  <button onmousedown="bleep38.play()" class="btnt" onClick="myFunction38()">৩৮</button>
+                  <button onmousedown="bleep39.play()" class="btnt" onClick="myFunction39()">৩৯</button>
+                  <button onmousedown="bleep40.play()" class="btnt" onClick="myFunction40()">৪০</button>
+                  <button onmousedown="bleep41.play()" class="btnt" onClick="myFunction41()">৪১</button>
+                  <button onmousedown="bleep42.play()" class="btnt" onClick="myFunction42()">৪২</button>
+                  <button onmousedown="bleep43.play()" class="btnt" onClick="myFunction43()">৪৩</button>
+                  <button onmousedown="bleep44.play()" class="btnt" onClick="myFunction44()">৪৪</button>
+                  <button onmousedown="bleep45.play()" class="btnt" onClick="myFunction45()">৪৫</button>
+                  <button onmousedown="bleep46.play()" class="btnt" onClick="myFunction46()">৪৬</button>
+                  <button onmousedown="bleep47.play()" class="btnt" onClick="myFunction47()">৪৭</button>
+                  <button onmousedown="bleep48.play()" class="btnt" onClick="myFunction48()">৪৮</button>
+                  <button onmousedown="bleep49.play()" class="btnt" onClick="myFunction49()">৪৯</button>
+                  <button onmousedown="bleep50.play()" class="btnt" onClick="myFunction50()">৫০</button>
+                </div>
+              </div>
+          </div>
+      </div>      
+</section>
+{% endblock content %}
+    
